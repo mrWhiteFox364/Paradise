@@ -450,6 +450,9 @@
 "bd" = (
 /obj/machinery/power/smes,
 /obj/effect/decal/warning_stripes/west,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
 "be" = (
@@ -463,10 +466,6 @@
 /obj/structure/cable,
 /obj/machinery/power/terminal{
 	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "1-2";
-	pixel_y = 0
 	},
 /obj/effect/decal/cleanable/dust,
 /turf/simulated/floor/plating,
@@ -604,16 +603,16 @@
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
 "bB" = (
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/machinery/power/apc/worn_out{
 	pixel_y = -24
 	},
 /obj/effect/decal/warning_stripes/southwest,
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
@@ -703,9 +702,6 @@
 	},
 /area/ruin/spaceprison)
 "bL" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /obj/item/stock_parts/cell,
 /obj/effect/decal/warning_stripes/south,
 /obj/effect/decal/cleanable/dust,
@@ -898,7 +894,7 @@
 /area/ruin/spaceprison)
 "cn" = (
 /obj/machinery/door/window/brigdoor{
-	id = "Cell 1";
+	id = "Ruin Cell 1";
 	name = "Cell 1";
 	req_access = list(2)
 	},
@@ -911,7 +907,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/door_timer/cell_1{
-	dir = 2;
+	id = "Ruin Cell 1";
 	pixel_x = -32;
 	pixel_y = 0
 	},
@@ -1022,7 +1018,7 @@
 "cI" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 8;
-	id = "Cell 6";
+	id = "Ruin Cell 6";
 	name = "Cell 6";
 	req_access = list(2)
 	},
@@ -1034,13 +1030,6 @@
 	dir = 8
 	},
 /obj/effect/decal/warning_stripes/southwestcorner,
-/obj/machinery/door_control{
-	desc = "A remote control-switch for the pod doors.";
-	id = "spaceprisonpod";
-	name = "Pod Door Control";
-	pixel_x = -25;
-	pixel_y = -9
-	},
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -1087,8 +1076,15 @@
 	},
 /area/ruin/spaceprison)
 "cQ" = (
-/turf/simulated/floor,
-/area/space/nearstation)
+/obj/machinery/door_control{
+	desc = "A remote control-switch for the pod doors.";
+	id = "spaceprisonpod";
+	name = "Pod Door Control";
+	pixel_x = 25;
+	pixel_y = 23
+	},
+/turf/simulated/floor/plating/airless,
+/area/ruin/spaceprison)
 "cS" = (
 /obj/structure/closet/toolcloset,
 /obj/effect/decal/cleanable/dust,
@@ -1149,6 +1145,7 @@
 	dir = 4
 	},
 /obj/machinery/door_timer/cell_3{
+	id = "Ruin Cell 3";
 	pixel_x = -32;
 	pixel_y = 0
 	},
@@ -1177,7 +1174,7 @@
 /obj/machinery/door/poddoor/multi_tile/two_tile_ver{
 	id_tag = "spaceprisonpod"
 	},
-/turf/simulated/floor,
+/turf/simulated/floor/plating,
 /area/ruin/spaceprison)
 "eG" = (
 /turf/simulated/floor/plasteel{
@@ -1444,8 +1441,18 @@
 /turf/simulated/floor/plating/airless,
 /area/ruin/spaceprison)
 "jy" = (
-/turf/simulated,
-/area/space/nearstation)
+/obj/effect/decal/warning_stripes/west,
+/obj/machinery/door_control{
+	desc = "A remote control-switch for the pod doors.";
+	id = "spaceprisonpod";
+	name = "Pod Door Control";
+	pixel_x = -25;
+	pixel_y = 23
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "dark"
+	},
+/area/ruin/spaceprison)
 "jO" = (
 /obj/structure/sign/vacuum/external,
 /turf/simulated/wall/r_wall,
@@ -1508,7 +1515,7 @@
 	dir = 4
 	},
 /obj/structure/closet/secure_closet/brig{
-	id = "Cell 1";
+	id = "Ruin Cell 1";
 	name = "Cell 1 Locker"
 	},
 /turf/simulated/floor/plating,
@@ -1577,6 +1584,10 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
 "np" = (
@@ -1605,6 +1616,10 @@
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
@@ -1733,6 +1748,7 @@
 	dir = 8
 	},
 /obj/machinery/door_timer/cell_5{
+	id = "Ruin Cell 5";
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -1756,8 +1772,8 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/brig{
-	id = "Cell 4";
-	name = "Cell 4 Locker"
+	id = "Ruin Cell 6";
+	name = "Cell 6 Locker"
 	},
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
@@ -1822,10 +1838,8 @@
 /area/ruin/spaceprison)
 "tV" = (
 /obj/machinery/door/window/brigdoor{
-	base_state = "leftsecure";
 	dir = 8;
-	icon_state = "leftsecure";
-	id = "Cell 4";
+	id = "Ruin Cell 4";
 	name = "Cell 4";
 	req_access = list(2)
 	},
@@ -1909,7 +1923,7 @@
 "vY" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 8;
-	id = "Cell 5";
+	id = "Ruin Cell 5";
 	name = "Cell 5";
 	req_access = list(2)
 	},
@@ -1946,7 +1960,7 @@
 "wU" = (
 /obj/structure/window/reinforced,
 /obj/structure/closet/secure_closet/brig{
-	id = "Cell 2";
+	id = "Ruin Cell 2";
 	name = "Cell 2 Locker"
 	},
 /obj/effect/decal/cleanable/dust,
@@ -2067,9 +2081,7 @@
 /area/ruin/spaceprison)
 "zr" = (
 /obj/machinery/door/window/brigdoor{
-	base_state = "leftsecure";
-	icon_state = "leftsecure";
-	id = "Cell 3";
+	id = "Ruin Cell 3";
 	name = "Cell 3";
 	req_access = list(2)
 	},
@@ -2089,8 +2101,8 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/brig{
-	id = "Cell 6";
-	name = "Cell 6 Locker"
+	id = "Ruin Cell 4";
+	name = "Cell 4 Locker"
 	},
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
@@ -2100,6 +2112,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/door_timer/cell_2{
+	id = "Ruin Cell 2";
 	pixel_x = -32;
 	pixel_y = 0
 	},
@@ -2314,7 +2327,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/door_timer/cell_6,
+/obj/machinery/door_timer/cell_6{
+	id = "Ruin Cell 6"
+	},
 /obj/structure/cable{
 	icon_state = "1-2";
 	pixel_y = 0
@@ -2547,6 +2562,10 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor,
 /area/ruin/spaceprison)
 "KD" = (
@@ -2573,16 +2592,6 @@
 /obj/effect/landmark/tiles/damageturf,
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
-"Lr" = (
-/obj/machinery/door_control{
-	desc = "A remote control-switch for the pod doors.";
-	id = "spaceprisonpod";
-	name = "Pod Door Control";
-	pixel_x = 25;
-	pixel_y = -9
-	},
-/turf/simulated/floor,
-/area/space/nearstation)
 "Me" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -2670,6 +2679,7 @@
 "MW" = (
 /obj/structure/window/reinforced,
 /obj/machinery/door_timer/cell_4{
+	id = "Ruin Cell 4";
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -2866,7 +2876,7 @@
 	dir = 4
 	},
 /obj/structure/closet/secure_closet/brig{
-	id = "Cell 3";
+	id = "Ruin Cell 3";
 	name = "Cell 3 Locker"
 	},
 /turf/simulated/floor/plating,
@@ -2951,7 +2961,7 @@
 /area/ruin/spaceprison)
 "TI" = (
 /obj/machinery/door/window/brigdoor{
-	id = "Cell 2";
+	id = "Ruin Cell 2";
 	name = "Cell 2";
 	req_access = list(2)
 	},
@@ -3031,10 +3041,6 @@
 /obj/effect/decal/cleanable/dust,
 /turf/simulated/floor/plating,
 /area/ruin/spaceprison)
-"WF" = (
-/obj/effect/landmark/tiles/damageturf,
-/turf/simulated/floor,
-/area/ruin/spaceprison)
 "Xe" = (
 /obj/machinery/light{
 	dir = 1
@@ -3055,7 +3061,7 @@
 /area/ruin/spaceprison)
 "Xy" = (
 /obj/structure/spacepoddoor,
-/turf/simulated/floor,
+/turf/simulated/floor/plating,
 /area/ruin/spaceprison)
 "XX" = (
 /obj/structure/chair/office/light{
@@ -3185,7 +3191,7 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/brig{
-	id = "Cell 5";
+	id = "Ruin Cell 5";
 	name = "Cell 5 Locker"
 	},
 /turf/simulated/floor/plating,
@@ -4511,12 +4517,12 @@ ab
 ab
 ab
 ab
-jy
-jy
+ac
+ac
 aa
-cQ
-cQ
-cQ
+ac
+ac
+ac
 aa
 aa
 aa
@@ -4568,13 +4574,13 @@ kH
 va
 zk
 Ai
-cQ
-cQ
-cQ
-cQ
-cQ
-cQ
-cQ
+ac
+ac
+ac
+ac
+ac
+ac
+ac
 ab
 pH
 aa
@@ -4626,10 +4632,10 @@ kh
 HY
 Ir
 ME
-cQ
-cQ
-cQ
-cQ
+ac
+ac
+ac
+ac
 jU
 gD
 ai
@@ -4684,10 +4690,10 @@ kh
 QJ
 qp
 Kh
-Lr
+ac
 cQ
-cQ
-cQ
+Vt
+ac
 ai
 Vt
 ai
@@ -4801,7 +4807,7 @@ cK
 bJ
 GQ
 cJ
-Bd
+jy
 Bd
 uO
 lL
@@ -5039,7 +5045,7 @@ cP
 cP
 KD
 cP
-WF
+iz
 ab
 ad
 aa
