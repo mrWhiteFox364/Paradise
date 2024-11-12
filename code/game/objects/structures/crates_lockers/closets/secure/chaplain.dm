@@ -18,4 +18,3 @@
 	new /obj/item/clothing/head/helmet/riot/knight/templar(src)
 	new /obj/item/clothing/suit/armor/riot/knight/templar(src)
 	new /obj/item/shield/riot/templar(src)
-
