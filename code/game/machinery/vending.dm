@@ -3232,6 +3232,8 @@
 		/obj/item/clothing/suit/hooded/chaplain_hoodie = 3,
 		/obj/item/radio/headset/headset_service = 5,
 		/obj/item/clothing/suit/hooded/nun = 3,
+		/obj/item/clothing/suit/hooded/monk = 3,
+		/obj/item/clothing/suit/hooded/hijab = 3,
 		/obj/item/clothing/suit/holidaypriest = 3,
 		/obj/item/clothing/head/bishopmitre = 3,
 		/obj/item/clothing/neck/cloak/bishop = 3,

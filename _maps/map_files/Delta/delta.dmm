@@ -40803,7 +40803,6 @@
 /obj/structure/sign/botany{
 	pixel_y = -32
 	},
-/obj/item/clothing/glasses/hud/hydroponic,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -110995,7 +110994,6 @@
 /obj/item/clothing/glasses/hud/hydroponic,
 /obj/item/clothing/glasses/hud/hydroponic,
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/obj/item/clothing/glasses/hud/hydroponic,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
